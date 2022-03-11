@@ -30,18 +30,30 @@ p {
   /*margin-bottom: 12px;*/
 }
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   position: relative;
 }
 .link {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .noname {
   width: 200px;
@@ -49,6 +61,8 @@ p {
 }
 .logo {
   opacity: .6;
+  -webkit-transition: opacity ease-in-out .2s;
+  -o-transition: opacity ease-in-out .2s;
   transition: opacity ease-in-out .2s;
   position: absolute;
   top: 50%;
@@ -63,19 +77,27 @@ p {
 }
 .esquire {
   width: 120px;
-  transform: translate(-140%, -200%);
+  -webkit-transform: translate(-140%, -200%);
+      -ms-transform: translate(-140%, -200%);
+          transform: translate(-140%, -200%);
 }
 .gucci {
   width: 100px;
-  transform: translate(-60%, 130%);
+  -webkit-transform: translate(-60%, 130%);
+      -ms-transform: translate(-60%, 130%);
+          transform: translate(-60%, 130%);
 }
 @media only screen and (min-width: 800px) {
   .esquire {
     width: 120px;
-    transform: translate(-340%, -200%);
+    -webkit-transform: translate(-340%, -200%);
+        -ms-transform: translate(-340%, -200%);
+            transform: translate(-340%, -200%);
   }
   .gucci {
     width: 100px;
-    transform: translate(-60%, 130%);
+    -webkit-transform: translate(-60%, 130%);
+        -ms-transform: translate(-60%, 130%);
+            transform: translate(-60%, 130%);
   }
 }
